@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-demoplugin",
+  "displayName": "DemoPluginiOS",
+  "version": "1.0.0",
+  "description": "A sample demo plugin",
+  "cordova": {
+    "id": "cordova-plugin-demoplugin",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samsudheen/demoplugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Movate Labs",
+  "license": "MIT",
+  "homepage": "https://github.com/samsudheen/demoplugin/"
+  
+}
