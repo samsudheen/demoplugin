@@ -17,5 +17,7 @@
             </feature>
         </config-file>
         <source-file src="src/ios/DemoPlugin.swift" />
+        <framework src="ServiceChat.xcframework" embed="true" />
+        <framework src="ServiceCore.xcframework" embed="true" />
     </platform>
 </plugin>
