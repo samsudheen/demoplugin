@@ -1,3 +1,7 @@
+import ServiceChat
+import ServiceCore
+
+
 @objc(DemoPlugin) class DemoPlugin : CDVPlugin{
 // MARK: Properties
     var pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR)
@@ -13,6 +17,12 @@
                 pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR, messageAs: "Something wrong")
             }
         }
+        let config = SCSChatConfiguration(liveAgentPod: "d.la2-c2-ukb.salesforceliveagent.com",
+                                              orgId:"00D2w000008oB2q",
+                                              deploymentId: "5722w000000cZGb",
+                                              buttonId: "5732w000000cay8")
+        config?.visitorName = "Johnsmith"
+        ServiceCloud.shared().chatUI.showChat(with: config!)
         self.commandDelegate!.send(pluginResult, callbackId: command.callbackId)
     }
 }
